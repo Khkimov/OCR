@@ -1,0 +1,63 @@
+<div class="screen result-screen" id="screen2">
+  <div class="navigation-back">
+            <span class="navigation-back-button">
+                <img src="assets/arrow-left.svg">
+                <span>Back</span>
+            </span>
+    <div class="service-status">Service Status <span class="status-indicator"></span></div>
+  </div>
+  <section>
+    <article>
+      <div class="content-view">
+        <div class="content-view__header">
+          <div id="document-name"></div>
+          <div class="content-view__header-buttons">
+            <button class="add-new-file-button">
+              Add new
+              <img class="add-button-icon" src="assets/plus.svg" alt="Plus icon">
+            </button>
+            <button class="recognize-button">
+              Recognize
+              <img src="assets/chevron-right.svg" alt="Chevron right">
+            </button>
+          </div>
+        </div>
+        <div class="content-view__content">
+          <app-image [image]="imageService.image"></app-image>
+<!--          <img src="" id="document-image">-->
+        </div>
+      </div>
+    </article>
+    <article>
+      <div class="content-view">
+        <div class="content-view__header">
+          <div>JSON</div>
+          <div class="content-view__header-buttons">
+            <button id="copy-button" class="copy-and-save-buttons">
+              Copy
+              <img src="assets/copy.svg" alt="Copy icon">
+            </button>
+            <button id="save-button" class="copy-and-save-buttons">
+              Save
+              <img src="assets/save.svg" alt="Save icon">
+            </button>
+          </div>
+        </div>
+        <div class="content-view__content document-text">
+          <!--                        <div class="image-base-64">-->
+          <!--                            <img src="" id="document-image-base64">-->
+          <!--                        </div>-->
+          <div id="document-text"></div>
+          <div class="document-text-empty">
+<!--            <img src="assets/circle-warning.svg">-->
+            <div>Text is not found</div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <footer>
+    <div>2024, IDScan.net OCR Demo v1.0.0</div>
+    Optical Character Recognition
+  </footer>
+</div>
