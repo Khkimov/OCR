@@ -1,20 +1,21 @@
-<div class="screen start-screen" id="screen1">
-  <div class="start-screen-dialog" id="add-new-file">
-    <h1 class="start-screen-dialog__title">
+<div class="start-screen-dialog">
+  <div class="start-screen-dialog-main">
+    <h1 class="start-screen-dialog-main__title">
       Optical Character Recognition
     </h1>
     <div class="service-status">Service Status <span class="status-indicator"></span></div>
     <hr>
-    <img class="start-screen-dialog__icon" src="assets/document.add.svg" alt="icon"/>
-    <div class="start-screen-dialog__text">
-      Drag PDF, JPG, PNG file here <br>
-      or press the Add New button below
+    <div class="start-screen-dialog-main__info">
+      <img class="start-screen-dialog-main__icon" src="assets/document.add.svg" alt="icon"/>
+      <div class="start-screen-dialog-main__text">
+        Drag PDF, JPG, PNG file here <br>
+        or press the Add New button below
+      </div>
     </div>
     <button>
-      Add New
-      <img src="assets/plus.svg" alt="">
-      <input type="file" id="upload-input" (change)="onFileSelected($event)" style="" />
+      <span>Add New</span>
+      <img src="assets/plus.svg" alt="Plus icon">
+      <input class="upload-input" type="file" id="upload-input" (change)="onFileSelected($event)" />
     </button>
-<!--    <input type="file" id="upload-input"/>-->
   </div>
 </div>

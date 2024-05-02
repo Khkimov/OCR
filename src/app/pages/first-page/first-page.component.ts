@@ -19,7 +19,6 @@ export class FirstPageComponent {
     const file = event.target.files[0];
     if (file) {
       this.imageService.image = URL.createObjectURL(file);
-      console.log('Файл выбран:', file.name);
       this.router.navigate(['/result']);
     } else {
       console.log('Нет файла');
