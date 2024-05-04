@@ -1,63 +1,105 @@
-<div class="screen result-screen" id="screen2">
-  <div class="navigation-back">
-            <span class="navigation-back-button">
-                <img src="assets/arrow-left.svg">
-                <span>Back</span>
-            </span>
+<div class="result-screen">
+  <header class="result-screen__header">
+    <div class="result-screen__back-button">
+      <img src="assets/arrow-left.svg">
+      <span>Back</span>
+    </div>
     <div class="service-status">Service Status <span class="status-indicator"></span></div>
-  </div>
-  <section>
-    <article>
-      <div class="content-view">
-        <div class="content-view__header">
-          <div id="document-name"></div>
-          <div class="content-view__header-buttons">
-            <button class="add-new-file-button">
-              Add new
-              <img class="add-button-icon" src="assets/plus.svg" alt="Plus icon">
-            </button>
-            <button class="recognize-button">
-              Recognize
-              <img src="assets/chevron-right.svg" alt="Chevron right">
-            </button>
-          </div>
-        </div>
-        <div class="content-view__content">
-          <app-image [image]="imageService.image"></app-image>
-<!--          <img src="" id="document-image">-->
+  </header>
+  <main class="result-screen__main">
+    <div class="result-screen__document">
+      <div class="result-screen__document-header">
+        <div class="document-name">img_file_name.jpg</div>
+        <div class="document-buttons">
+          <button class="document-button">
+            Add New
+            <img src="assets/black-plus.svg">
+          </button>
+          <button class="document-button not-active-button">
+            Recognize
+            <img src="assets/chevron-right.svg">
+          </button>
         </div>
       </div>
-    </article>
-    <article>
-      <div class="content-view">
-        <div class="content-view__header">
-          <div>JSON</div>
-          <div class="content-view__header-buttons">
-            <button id="copy-button" class="copy-and-save-buttons">
-              Copy
-              <img src="assets/copy.svg" alt="Copy icon">
-            </button>
-            <button id="save-button" class="copy-and-save-buttons">
-              Save
-              <img src="assets/save.svg" alt="Save icon">
-            </button>
-          </div>
-        </div>
-        <div class="content-view__content document-text">
-          <!--                        <div class="image-base-64">-->
-          <!--                            <img src="" id="document-image-base64">-->
-          <!--                        </div>-->
-          <div id="document-text"></div>
-          <div class="document-text-empty">
-<!--            <img src="assets/circle-warning.svg">-->
-            <div>Text is not found</div>
-          </div>
+      <div class="result-screen__document-content">
+        <app-image [image]="imageService.image"></app-image>
+      </div>
+    </div>
+    <div class="result-screen__document">
+      <div class="result-screen__document-header">
+        <div class="document-name">img_file_name.jpg</div>
+        <div class="document-buttons">
+          <button class="document-button">
+            Copy
+            <img src="assets/copy.svg">
+          </button>
+          <button class="document-button">
+            Save
+            <img src="assets/save.svg">
+          </button>
         </div>
       </div>
-    </article>
-  </section>
-  <footer>
-    <div>2024, IDScan.net OCR Demo v1.0.0</div>
-    Optical Character Recognition
+      <div class="result-screen__document-content"></div>
+    </div>
+  </main>
+  <footer class="result-screen__footer">
+    <div>
+      2024, OCR Demo v1.0.0
+    </div>
+    <div>Optical Character Recognition</div>
   </footer>
+<!--  <section>-->
+<!--    <article>-->
+<!--      <div class="content-view">-->
+<!--        <div class="content-view__header">-->
+<!--          <div id="document-name"></div>-->
+<!--          <div class="content-view__header-buttons">-->
+<!--            <button class="add-new-file-button">-->
+<!--              Add new-->
+<!--              <img class="add-button-icon" src="assets/plus.svg" alt="Plus icon">-->
+<!--            </button>-->
+<!--            <button class="recognize-button">-->
+<!--              Recognize-->
+<!--              <img src="assets/chevron-right.svg" alt="Chevron right">-->
+<!--            </button>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="content-view__content">-->
+<!--          <app-image [image]="imageService.image"></app-image>-->
+<!--&lt;!&ndash;          <img src="" id="document-image">&ndash;&gt;-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </article>-->
+<!--    <article>-->
+<!--      <div class="content-view">-->
+<!--        <div class="content-view__header">-->
+<!--          <div>JSON</div>-->
+<!--          <div class="content-view__header-buttons">-->
+<!--            <button id="copy-button" class="copy-and-save-buttons">-->
+<!--              Copy-->
+<!--              <img src="assets/copy.svg" alt="Copy icon">-->
+<!--            </button>-->
+<!--            <button id="save-button" class="copy-and-save-buttons">-->
+<!--              Save-->
+<!--              <img src="assets/save.svg" alt="Save icon">-->
+<!--            </button>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="content-view__content document-text">-->
+<!--          &lt;!&ndash;                        <div class="image-base-64">&ndash;&gt;-->
+<!--          &lt;!&ndash;                            <img src="" id="document-image-base64">&ndash;&gt;-->
+<!--          &lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--          <div id="document-text"></div>-->
+<!--          <div class="document-text-empty">-->
+<!--&lt;!&ndash;            <img src="assets/circle-warning.svg">&ndash;&gt;-->
+<!--            <div>Text is not found</div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </article>-->
+<!--  </section>-->
+<!--  <footer>-->
+<!--    <div>2024, IDScan.net OCR Demo v1.0.0</div>-->
+<!--    Optical Character Recognition-->
+<!--  </footer>-->
 </div>
