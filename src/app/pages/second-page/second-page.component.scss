@@ -51,6 +51,7 @@
       line-height: 22px;
       color: #1C1C1C;
       background: #fff;
+      cursor: pointer;
     }
 
     .not-active-button {
@@ -61,10 +62,11 @@
 
   &__document-content {
     margin-top: 16px;
+    padding: 0 20px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 80vh;
     border-radius: 8px;
     border: 1px solid #E0E0E0;
     background: #ECECEC;
