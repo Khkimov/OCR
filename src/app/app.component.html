@@ -1,6 +1,6 @@
 <div class="app">
   <router-outlet></router-outlet>
-  <app-modal></app-modal>
+  <app-modal *ngIf="modalService.isVisible$ | async"></app-modal>
 <!--  <app-first-page></app-first-page>-->
 <!--  <app-second-page></app-second-page>-->
 </div>

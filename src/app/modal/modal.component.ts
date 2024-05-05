@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {UploadService} from "../services/upload.service";
 
 @Component({
   selector: 'app-modal',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './modal.component.scss'
 })
 export class ModalComponent {
-
+  constructor(public imageService: UploadService) {
+  }
 }
