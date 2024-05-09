@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {UploadService} from "../../services/upload.service";
+import {ModalService} from "../../services/modal.service";
 
 @Component({
   selector: 'app-second-page',
@@ -8,7 +9,13 @@ import {UploadService} from "../../services/upload.service";
 })
 export class SecondPageComponent {
   constructor(
-    public imageService: UploadService
+    public imageService: UploadService,
+    private modalService: ModalService
   ) {
+    if (this.modalService.isVisible$) {
+      setTimeout(() => {
+        this.modalService.close()
+      }, 2000)
+    }
   }
 }
