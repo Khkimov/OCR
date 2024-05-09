@@ -1,6 +1,6 @@
-<div class="app">
-<!--  <router-outlet></router-outlet>-->
-  <app-drag-and-drop></app-drag-and-drop>
+<div class="app" draggable="true" (dragenter)="create()">
+  <router-outlet></router-outlet>
+  <app-drag-and-drop *ngIf="isDrag"></app-drag-and-drop>
   <app-modal *ngIf="modalService.isVisible$ | async"></app-modal>
 <!--  <app-first-page></app-first-page>-->
 <!--  <app-second-page></app-second-page>-->
